@@ -1,0 +1,121 @@
+<html>
+<head>
+<style>
+.table.container{
+	width:200px;
+	height:200px;
+	background: green;
+
+	display:table-cell;
+	text-align: center;
+	vertical-align:middle;
+}
+
+.table .content{
+	width:20px;
+	height:20px;
+	background: blue;
+
+	display:inline-block;
+}
+
+.flex.container{
+	width:200px;
+	height:200px;
+	background: green;
+
+	display:flex;
+	justify-content:center;
+	align-items: center;
+}
+
+.flex .content{
+	width:20px ;
+	height:20px;
+	background: blue;
+}
+
+.position.container, .position1.container{
+	width:200px;
+	height:200px;
+	background: green;	
+	position:relative;
+}
+
+.position .content{
+	width:20px;
+	height:20px;
+	background:blue;
+		position: absolute;
+		top:50%;
+		left:50%;
+		margin:-10px 0 0 -10px;
+}
+
+
+.position1 .content{
+	width:20px;
+	height:20px;
+	background:blue;
+	position: relative;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+.margins.container{
+	width:200px;
+	height:200px;
+	background: green;	
+}
+
+.margins .content{
+	width:20px;
+	height:20px;
+	background:blue;
+	margin:calc( 50% - 10px);
+	display:inline-block;
+}
+
+
+.paddings.container{
+	width:200px;
+	height:200px;
+	background: green;	
+	padding:calc( 7%);
+	box-sizing:border-box;
+}
+
+.paddings .content{
+	width:20px;
+	height:20px;
+	background:blue;
+	display:inline-block;
+}
+
+
+
+</style>
+</head>
+<body>
+	using table
+	<div class="table container"><div class="content"></div></div>
+	<hr/>
+	Using flex
+	<div class="flex container"><div class="content"></div></div>
+	<hr/>
+	using Position
+	<div class="position container"><div class="content"></div></div>	
+	<hr/>
+	Using position1
+	<div class="position1 container"><div class="content"></div></div>	
+	<hr/>
+	Using margins
+	<div class="margins container"><div class="content"></div></div>	
+	<hr/>
+	Using paddings
+	<div class="paddings container"><div class="content"></div></div>	
+
+
+</body>
+</html>
